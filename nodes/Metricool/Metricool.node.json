@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-metricool.metricool",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://app.metricool.com/api"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://app.metricool.com/api"
+			}
+		]
+	},
+	"alias": ["social media", "scheduler", "marketing", "posts"]
+}

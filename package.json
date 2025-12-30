@@ -1,0 +1,50 @@
+{
+	"name": "n8n-nodes-metricool",
+	"version": "0.1.0",
+	"description": "n8n community node for Metricool - Schedule and manage social media posts",
+	"license": "MIT",
+	"homepage": "https://metricool.com",
+	"main": "index.js",
+	"keywords": [
+		"n8n-community-node-package",
+		"metricool",
+		"social-media",
+		"scheduler",
+		"marketing"
+	],
+	"author": {
+		"name": "",
+		"email": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"scripts": {
+		"build": "tsc && node scripts/post-build.js",
+		"dev": "tsc --watch",
+		"lint": "eslint . --ext .ts",
+		"lintfix": "eslint . --ext .ts --fix",
+		"prepublishOnly": "npm run build"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/MetricoolApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Metricool/Metricool.node.js"
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.0",
+		"copyfiles": "^2.4.1",
+		"typescript": "^5.3.0"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
