@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-metricool-va360",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for Metricool - Schedule and manage social media posts",
 	"license": "MIT",
 	"homepage": "https://va360.academy",
